@@ -1,4 +1,4 @@
-package com.sparta.springauth.food;
+package food;
 
 public interface Food {
     void eat();

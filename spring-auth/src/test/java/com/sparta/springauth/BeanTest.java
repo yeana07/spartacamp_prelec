@@ -1,6 +1,6 @@
 package com.sparta.springauth;
 
-import com.sparta.springauth.food.Food;
+import food.Food;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

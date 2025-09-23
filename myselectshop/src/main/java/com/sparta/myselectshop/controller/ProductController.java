@@ -31,13 +31,13 @@ public class ProductController {
     }
 
     @GetMapping("/products")
-    public Page<ProductResponseDto> getProduct(
+    public Page<ProductResponseDto> getProducts(
             @RequestParam("page") int page,
             @RequestParam("size") int size,
             @RequestParam("sortBy") String sortBy,
             @RequestParam("isAsc") boolean isAsc,
             @AuthenticationPrincipal UserDetailsImpl userDetails) {
-        return productService.getProduct(userDetails.getUser(),
+        return productService.getProducts(userDetails.getUser(),
                 page-1, size, sortBy, isAsc);
     }
 }
